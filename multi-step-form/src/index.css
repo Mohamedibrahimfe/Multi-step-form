@@ -1,0 +1,21 @@
+/* ubuntu font */
+/* @import url('/multi-step-form/public/assets/fonts/Ubuntu-Medium.ttf');
+@import url('/multi-step-form/public/assets/fonts/Ubuntu-Bold.ttf');
+@import url('/multi-step-form/public/assets/fonts/Ubuntu-Regular.ttf'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: aquamarine;
+}
