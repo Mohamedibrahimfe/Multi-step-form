@@ -1,0 +1,66 @@
+.step-one{
+    flex-direction: column!important;
+    
+}
+.step-one header{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.step-one header h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #002859;
+}
+.step-one header p{
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+}
+.step-one form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.step-one form div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.step-one form div label{
+    font-size: 14px;
+    font-weight: 500;
+    color:#21374F;
+}
+.step-one form div input{
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid hsl(229, 8%, 60%);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+}
+.step-one form div input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+}
+.step-one form button{
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #002859;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 40px;
+    align-self: flex-end;
+    margin-right: 140px;
+}

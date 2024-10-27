@@ -8,6 +8,8 @@ import StepFour from "./pages/StepFour";
 import NoPage from "./pages/NoPage";
 
 import "./index.css";
+import "./styles/StepOne.css";
+
 export default function App() {
   return (
     <BrowserRouter>
