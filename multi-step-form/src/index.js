@@ -6,6 +6,7 @@ import StepTwo from "./pages/StepTwo";
 import StepThree from "./pages/StepThree";
 import StepFour from "./pages/StepFour";
 import NoPage from "./pages/NoPage";
+import Thank from "./pages/Thank";
 
 import "./index.css";
 import "./styles/StepOne.css";
