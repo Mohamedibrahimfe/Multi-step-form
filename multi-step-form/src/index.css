@@ -44,6 +44,10 @@ body {
   position: relative;
   gap: 50px;
 }
+.mobile-nav{
+  display: none;
+}
+
 nav{
   flex: 1;
   display: flex;
