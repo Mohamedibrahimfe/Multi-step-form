@@ -136,3 +136,16 @@ section{
   color: gray;
   font-size: 16px;
 }
+.confirm-btn{
+  cursor: pointer;
+  position: absolute;
+  right: 128px;
+  bottom: 20px;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #483EFF;
+  color: white;
+  font-size: 16px;
+}

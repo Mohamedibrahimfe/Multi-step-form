@@ -16,7 +16,10 @@ import "./styles/StepFour.css";
 import "./styles/Thank.css";
 
 export default function App() {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    addOns: [],
+    total: 0,
+  });
 
   const [active, setActive] = useState(1);
 

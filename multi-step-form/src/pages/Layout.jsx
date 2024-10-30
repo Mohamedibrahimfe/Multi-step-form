@@ -63,22 +63,21 @@ const Layout = (props) => {
       </nav>
 
       <Outlet />
-
-      <button
-        className="next-btn"
-        disabled={props.active === 5 ? true : false}
-        onClick={handleNext}
-      >
-        Next Step
-      </button>
-
-      <button
-        className="prev-btn"
-        disabled={props.active === 1 ? true : false}
-        onClick={handlePrev}
-      >
-        Go Back
-      </button>
+      {props.active !== 5 && (
+        <button onClick={handleNext} className="next-btn">
+          Next Step
+        </button>
+      )}
+      {props.active !== 1 && (
+        <button onClick={handlePrev} className="prev-btn">
+          Previous Step
+        </button>
+      )}
+      {props.active === 5 && (
+        <button onClick={() => navigate("/")} className="confirm-btn">
+          Finish
+        </button>
+      )}
     </div>
   );
 };

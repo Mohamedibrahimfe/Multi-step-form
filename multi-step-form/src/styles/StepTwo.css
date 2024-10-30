@@ -1,6 +1,6 @@
 .cards-container{
     display: flex;
-    gap: 100px;
+    gap: 20px;
 }
 .cards-container .card{
     display: flex;

@@ -1,10 +1,12 @@
 const Thank = () => {
   return (
     <section className="thank">
+      <img src="/assets/images/icon-thank-you.svg" alt="" />
       <h1>Thank you!</h1>
       <p>
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don't hesitate to email us.
+        Thanks for confirming your subscription! We hope you have fun using our
+        platform. If you ever need support, please feel free to email us at
+        0h7hZ@example.com
       </p>
     </section>
   );

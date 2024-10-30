@@ -1,0 +1,25 @@
+.thank{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+.thank h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #002859;
+}
+.thank p{
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+    text-align: center;
+    line-height: 30px;
+    /* width: 60%; */
+}
+.thank img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

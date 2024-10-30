@@ -1,0 +1,85 @@
+.summary{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    background-color: #F8F9FE;
+    border-radius: 10px;
+}
+.summary h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: #002859;
+    text-align: left;
+}
+.summary .plan p{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+    text-align: left;
+    position: absolute;
+    right: 40px;
+    margin-top: -15px;
+}
+.summary .plan h5{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+    text-align: left;
+    /* position: absolute; */
+    /* right: 40px; */
+    margin-top: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.summary .plan h5:hover{
+    color: #002859;
+}
+.addons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.addons p{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addons h5{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+    text-align: left;
+    /* position: absolute; */
+    /* right: 40px; */
+    margin-top: 5px;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    
+}
+.total p{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(229, 8%, 60%);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total .total-price{
+    font-size: 26px;
+    position: absolute;
+    right: 40px;
+    color: #483EFF;
+    font-weight: 900;
+}

@@ -51,6 +51,7 @@ const StepTwo = (props) => {
               })
             }
             type="checkbox"
+            selected={props.formData.billing ? true : false}
           />
           <span class="slider round"></span>
         </label>
