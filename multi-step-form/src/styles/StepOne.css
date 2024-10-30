@@ -1,6 +1,5 @@
 .step-one{
     flex-direction: column!important;
-    
 }
 .step-one header{
     margin-top: 20px;
@@ -11,7 +10,7 @@
     margin-bottom: 40px;
 }
 .step-one header h1{
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     color: #002859;
 }
@@ -23,7 +22,7 @@
 .step-one form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .step-one form div{
     display: flex;
@@ -37,7 +36,7 @@
 }
 .step-one form div input{
     width: 80%;
-    height: 50px;
+    height: 40px;
     border-radius: 5px;
     border: 1px solid hsl(229, 8%, 60%);
     padding: 10px;
