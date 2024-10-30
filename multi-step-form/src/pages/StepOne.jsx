@@ -1,5 +1,5 @@
-import { useState } from "react";
-const StepOne = () => {
+const StepOne = (props) => {
+  console.log(props.formData.name);
   return (
     <section className="step-one">
       <header>
@@ -10,11 +10,23 @@ const StepOne = () => {
       <form>
         <div>
           <label for="name">Name</label>
-          <input type="text" placeholder="e.g. Stephen King" id="name" />
+          <input
+            value={props.formData.name || ""}
+            onChange={(e) => {
+              props.setFormData({ ...props.formData, name: e.target.value });
+            }}
+            type="text"
+            placeholder="e.g. Stephen King"
+            id="name"
+          />
         </div>
         <div>
           <label for="email">Email Address</label>
           <input
+            value={props.formData.email}
+            onChange={(e) => {
+              props.setFormData({ ...props.formData, email: e.target.value });
+            }}
             type="email"
             placeholder="e.g. stephenking@lorem.com"
             id="email"
@@ -22,7 +34,15 @@ const StepOne = () => {
         </div>
         <div>
           <label for="phone">Phone Number</label>
-          <input type="tel" placeholder="e.g. +1 234 567 890" id="phone" />
+          <input
+            value={props.formData.phone}
+            onChange={(e) => {
+              props.setFormData({ ...props.formData, phone: e.target.value });
+            }}
+            type="tel"
+            placeholder="e.g. +1 234 567 890"
+            id="phone"
+          />
         </div>
       </form>
     </section>

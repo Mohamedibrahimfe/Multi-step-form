@@ -7,19 +7,53 @@ import StepThree from "./pages/StepThree";
 import StepFour from "./pages/StepFour";
 import NoPage from "./pages/NoPage";
 import Thank from "./pages/Thank";
-
+import { useState } from "react";
 import "./index.css";
 import "./styles/StepOne.css";
+import "./styles/StepTwo.css";
+import "./styles/StepThree.css";
+import "./styles/StepFour.css";
+import "./styles/Thank.css";
 
 export default function App() {
+  const [formData, setFormData] = useState({});
+
+  const [active, setActive] = useState(1);
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<StepOne />} />
-          <Route path="steptwo" element={<StepTwo />} />
-          <Route path="stepthree" element={<StepThree />} />
-          <Route path="stepfour" element={<StepFour />} />
+        <Route
+          path="/"
+          element={
+            <Layout
+              active={active}
+              setActive={setActive}
+              formData={formData}
+              setFormData={setFormData}
+            ></Layout>
+          }
+        >
+          <Route
+            index
+            element={<StepOne setFormData={setFormData} formData={formData} />}
+          />
+          <Route
+            path="/steptwo"
+            element={<StepTwo setFormData={setFormData} formData={formData} />}
+          />
+
+          <Route
+            path="/stepthree"
+            element={
+              <StepThree setFormData={setFormData} formData={formData} />
+            }
+          />
+          <Route
+            path="/stepfour"
+            element={<StepFour setFormData={setFormData} formData={formData} />}
+          />
+          <Route path="/thank" element={<Thank />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

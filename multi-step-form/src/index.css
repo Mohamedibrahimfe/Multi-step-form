@@ -31,16 +31,18 @@ body {
 }
 .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   height: 60vh;
-  width: 60%;
+  width: 65%;
   background-color: hsl(0, 0%, 100%);
   margin: 20vh auto ;
   text-align: left;
   padding:20px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  gap: 50px;
 }
 nav{
   flex: 1;
@@ -105,6 +107,32 @@ section{
   flex: 2 ;
   display: flex;
   height: 100%;
-  width: 100%;
   border-radius: 10px;
+}
+.next-btn{
+  cursor: pointer;
+  position: absolute;
+  right: 128px;
+  bottom: 20px;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #03295A;
+  color: white;
+  font-size: 16px;
+}
+.prev-btn{
+  cursor: pointer;
+  position: absolute;
+  left: 333px;
+  bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 500;
+  color: gray;
+  font-size: 16px;
 }
